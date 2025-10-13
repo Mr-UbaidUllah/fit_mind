@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "229838070469",
+    "project_id": "fit-mind-8dbdb",
+    "storage_bucket": "fit-mind-8dbdb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:229838070469:android:54cebc4d45470048dd06ac",
+        "android_client_info": {
+          "package_name": "com.example.fit_mind"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhgyLbm-_b9mvzvEnLEBvFIObpSRo9iBo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
