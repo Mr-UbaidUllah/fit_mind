@@ -24,7 +24,8 @@ class AppTextStyles {
 
   static TextStyle bodyMedium = GoogleFonts.inter(
     fontSize: 14,
-    color: Colors.black54,
+    color: Colors.black,
+    fontWeight: FontWeight.w400
   );
 
   static TextStyle bodySmall = GoogleFonts.inter(

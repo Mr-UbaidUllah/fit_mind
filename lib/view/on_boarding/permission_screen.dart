@@ -1,3 +1,6 @@
+import 'package:fit_mind/res/animations/fade_animations.dart';
+import 'package:fit_mind/res/animations/slide_animations.dart';
+import 'package:fit_mind/view/health_dashboard/health_dashboard.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
@@ -22,17 +25,23 @@ class PermissionScreen extends StatelessWidget {
             children: [
               IconButton(
                 onPressed: () => Navigator.pop(context),
-                icon: const Icon(Icons.arrow_back_ios_new, size: 20),
+                icon:  Icon(Icons.arrow_back_ios_new, size: 20, color: Colors.black,),
               ),
-              const SizedBox(height: 8),
+              const SizedBox(height: 20),
 
-              Text('Permissions', style: AppTextStyles.headingMedium),
+              FadeAnimations(
+                delay: 0.2,
+                  child: Text('Permissions', style: AppTextStyles.headingMedium)),
               const SizedBox(height: 8),
-              Text('Allow health data access', style: AppTextStyles.bodyLarge),
+              FadeAnimations(
+                delay: 0.4,
+                  child: Text('Allow health data access', style: AppTextStyles.bodyLarge)),
               const SizedBox(height: 30),
 
               Center(
-                child: Lottie.asset(AppAssets.googleFitAnimation, height: 180),
+                child: FadeAnimations(
+                  delay: 0.4,
+                    child: Image(image: AssetImage(AppAssets.appLogo,), height: 150,)),
               ),
               const SizedBox(height: 24),
 
@@ -46,7 +55,7 @@ class PermissionScreen extends StatelessWidget {
               MyButton(
                 text: "Connect to Google Fit",
                 onPressed: () {
-                  // TODO: connect with Google Fit service
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=> HealthDashboardScreen()));
                 },
               ),
             ],
